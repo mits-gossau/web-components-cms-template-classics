@@ -1,0 +1,78 @@
+/**
+ * NOTE: consider the following <link rel="preload" href="[url_to_font]"> to prefetch initially displayed fonts
+ */
+
+@font-face {
+    font-family: 'FuturaT';
+    src: url('../fonts/FuturaT/FuturaT-Book.eot');
+    src: url('../fonts/FuturaT/FuturaT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaT/FuturaT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaT/FuturaT-Book.woff') format('woff');
+    font-display: block;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'OPTIFutura-ExtraBlackCond';
+    src:url('../fonts/OPTIFutura-ExtraBlackCond/OPTIFutura-ExtraBlackCond.ttf.woff') format('woff'),
+        url('../fonts/OPTIFutura-ExtraBlackCond/OPTIFutura-ExtraBlackCond.ttf.svg#OPTIFutura-ExtraBlackCond') format('svg'),
+        url('../fonts/OPTIFutura-ExtraBlackCond/OPTIFutura-ExtraBlackCond.ttf.eot'),
+        url('../fonts/OPTIFutura-ExtraBlackCond/OPTIFutura-ExtraBlackCond.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-display: block;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/**
+ * ClubConcerts.html see end of body, there is a javascript which goes along with the CSS style
+ * <script type="text/javascript" async src="https://fast.fonts.net/jsapi/2b52b456-d052-418d-8595-f1c46d3439fb.js"></script>
+ * The contents below are taken from: <link href="https://fast.fonts.net/cssapi/2b52b456-d052-418d-8595-f1c46d3439fb.css" rel="stylesheet" />
+ * NOTE: use it inline like below, since the extra request to fast.fonts.net is not necessary
+ * D A N G E R: This font has a very bad hit-area and this can't yet be solved by css, it is in discussion though:
+ *  https://www.w3.org/TR/css-inline-3/#leading-trim
+ *  https://www.w3.org/TR/css-inline-3/#propdef-text-edge
+ *  https://css-tricks.com/leading-trim-the-future-of-digital-typesetting/
+ *  https://caniuse.com/?search=leading-trim
+ */
+@font-face{
+  font-family:"Futura Now Black";
+  src:url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextBlack_normal.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextBlack_normal.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family:"Futura Now ExtraBlack";
+  src:url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextExtraBlack_normal.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextExtraBlack_normal.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family:"Futura Now ExtraBold";
+  src:url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextExtraBold_normal.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextExtraBold_normal.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family:"Futura Now Light";
+  src:url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextLight_normal.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextLight_normal.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family:"Futura Now Regular";
+  src:url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextRegular_normal.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextRegular_normal.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family:"Futura Now Var";
+  src:url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowVariableRoman_normal.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowVariableRoman_normal.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
