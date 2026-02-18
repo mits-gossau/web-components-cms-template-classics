@@ -62,80 +62,95 @@
   font-display: swap;
 }
 
-
-html[is-home=true] {
-  /* --font-family: "Futura Now Regular", "FuturaT", "Arial", sans-serif; */
-  /* Classics 2026/27 */
-  --font-family: "HelveticaNowTextRegular", "Arial", sans-serif;
-  --font-family-bold: "HelveticaNowDisplayBold", "Arial", sans-serif;
-  --color: white;
-  --background-color: #2F2F2F;
-  --header-title-color: #FFED00;
-  --header-background-color: #DC7CD3;
-  --playlist-item-background-color: var(--background-color);
-}
-
-/* Classics 2026/27 */
-html[is-concert=true] {
-  --background-color: #eaeaea;
-  --header-background-color: #DC7CD3;
-  --h1-color:#70665c;
-  --h2-color:#000000;
-  --h3-color:#000000;
-  --h4-color:#000000;
-}
-
 html {
-  /* Classics 2026/27 */
-  --header-img-width: 100vw;
-  --header-img-max-width: 100vw;
-  --header-img-max-height: auto;
-  --h1-font-family: "HelveticaExpanded";
-  --h1-font-size: 3.75em;
-  --h1-color:#AC9E89;
-  --h1-word-break: break-word;
-  --h2-font-size: 1.5em;
-  --h2-color:#ffffff;
-  --h2-font-size: 3.75em;
-  --h3-color: white;
-  --h3-font-size: 1.4em;
+  /*------------------------------------------------- COLOR/THEME MANAGEMENT START -------------------------------------------------*/
+  
+  /* initial setup colors in WCClassicsBasePage.cshtml */
+
+  /* background color */
+  --background-color: var(--primary-color);
+  --footer-homepage-background-color: var(--primary-color);
+  --header-a-menu-icon-background-color: var(--primary-color);
+  --header-background-color: var(--primary-color);
+  --playlist-item-background-color: var(--primary-color);
+  --playlist-item-background-color: var(--primary-color);
+  --playlist-spacer-background-color: var(--primary-color);
+  --carousel-pagination-background-color-selected: var(--primary-color);
+  --carousel-pagination-background-color: var(--primary-color);
+  --footer-background-color: var(--primary-color);
+
+  /* color */
+  --a-color: var(--secondary-color);
+  --carousel-color-hover: var(--secondary-color);
+  --carousel-color: var(--secondary-color);
+  --color-hover-secondary: var(--secondary-color);
+  --color-menu-icon: var(--secondary-color);
+  --color: var(--secondary-color);
+  --concerts-playlist-border-bottom: var(--secondary-color);
+  --concerts-playlist-color: var(--secondary-color);
+  --footer-color: var(--secondary-color);
+  --footer-engagement-logo-text-a-color: var(--secondary-color);
+  --footer-engagement-logo-text-color: var(--secondary-color);
+  --h1-color: var(--secondary-color);
+  --h2-color: var(--secondary-color);
+  --h3-color: var(--secondary-color);
+  --h4-color: var(--secondary-color);
+  --header-color: var(--secondary-color);
+  --header-title-color-nav-open: var(--secondary-color);
+  --header-title-color: var(--secondary-color);
+  --header-title-color: var(--secondary-color);
+  --navigation-a-link-color-nav-open: var(--secondary-color);
+  --navigation-color-open: var(--secondary-color);
+  --navigation-color: var(--secondary-color);
+  --playlist-color: var(--secondary-color);
+  --playlist-item-a-color: var(--secondary-color);
+  --search-a-color: var(--secondary-color);
+  --search-color: var(--secondary-color);
+  --search-field-color: var(--secondary-color);
+  --search-h3-color: var(--secondary-color);
+
+  /* color hover */
+  --color-hover: var(--tertiary-color);
+  --footer-color-hover: var(--tertiary-color);
+  --footer-engagement-logo-text-a-color-hover: var(--tertiary-color);
+  --navigation-color-hover: var(--tertiary-color);
+  --navigation-color-open-hover: var(--tertiary-color);
+  --playlist-item-a-color-hover: var(--tertiary-color);
+  --search-color-hover: var(--tertiary-color);
+
+  /* border color */
+  --playlist-border-bottom: 2px solid var(--secondary-color);
+  --playlist-border-top: 2px solid var(--secondary-color);
+  --search-a-input-border-bottom-first: 2px solid var(--secondary-color);
+  --search-a-input-border-bottom: 2px solid var(--secondary-color);
+  --search-a-input-border-top-first: 2px solid var(--secondary-color);
+  
+  
+/*------------------------------------------------- COLOR/THEME MANAGEMENT END -------------------------------------------------*/
+
   --a-display: block;
+  --a-font-weight: bold;
   --a-margin: 0;
-  --a-color: #B79E86;
-  --content-width-not-web-component: 55%;
-  /*-----------------------------*/
   --a-text-align: center;
   --a-text-decoration-hover: none;
   --a-text-decoration: underline;
-  --a-text-underline-offset: 0.2em;
-  /* should be 6px but not visible */
+  --a-text-underline-offset: 0.2em;   /* should be 6px but not visible */
   --animation: none;
   --any-a-display: inline;
-  --background-color: #FFED00;
   --carousel-a-text-decoration-hover: var(--a-text-decoration-hover);
   --carousel-a-text-decoration: var(--a-text-decoration);
   --carousel-a-text-underline-offset: var(--a-text-underline-offset);
-  --carousel-color-hover: var(--color-hover);
-  --carousel-color: var(--color);
   --carousel-h3-font-family: var(--font-family-bold);
   --carousel-h3-font-size: var(--font-size);
   --carousel-h3-margin: 0;
   --carousel-h3-text-transform: uppercase;
   --carousel-p-margin: 0;
-  --carousel-pagination-background-color-selected: white;
-  --carousel-pagination-background-color: #FFED00;
   --carousel-pagination-bottom: 3%;
+  --carousel-pagination-height: 12px;
   --carousel-pagination-position: absolute;
   --carousel-pagination-width: 12px;
-  --carousel-pagination-height: 12px;
   --carousel-transition-duration: 1.6s;
-  --color-hover-secondary: var(--color);
-  --color-hover: var(--color);
-  --color: #000;
-  --color-menu-icon: white;
-  --concerts-playlist-border-bottom: 1px solid var(--a-color);
   --concerts-playlist-border-top: none;
-  --concerts-playlist-color: var(--concerts-color);
   --concerts-playlist-item-content-width-mobile: var(--content-width-not-web-component-mobile);
   --concerts-playlist-item-h4-font-family: var(--h4-font-family);
   --concerts-playlist-item-padding: var(--padding);
@@ -147,14 +162,17 @@ html {
   --content-spacing: 20px;
   --content-width-mobile: 100%;
   --content-width-not-web-component-mobile: 90%;
+  --content-width-not-web-component: 55%;
   --content-width: 900px;
   --flex-grow: 1;
   --flyer-duration-mobile: 0.8s;
   --flyer-duration: 1.2s;
   --flyer-timing-mobile: cubic-bezier(0.43, 1.77, 0, 0.43);
   --flyer-timing: cubic-bezier(0.88, 1.96, 0, 0.15);
+  --font-family-bold: "HelveticaNowDisplayBold", "Arial", sans-serif;
   --font-family-bold: var(--font-family-bold);
   --font-family-secondary: var(--font-family);
+  --font-family: "HelveticaNowTextRegular", "Arial", sans-serif;
   --font-family: var(--font-family);
   --font-size-mobile: min(18px, 5vw);
   --font-size: max(18px, 0.9vw);
@@ -166,10 +184,7 @@ html {
   --footer-a-link-font-size: 0.8rem;
   --footer-a-text-underline-offset: var(--a-text-underline-offset);
   --footer-align-content: flex-start;
-  --footer-background-color: #2F2F2F;
   --footer-box-sizing: border-box;
-  --footer-color-hover: #000;
-  --footer-color: #FFFFFF;
   --footer-content-width-mobile: 100%;
   --footer-content-width-not-web-component-mobile: var(--content-width-not-web-component-mobile);
   --footer-content-width-not-web-component: var(--content-width-not-web-component);
@@ -180,9 +195,6 @@ html {
   --footer-engagement-logo-max-height-mobile: 40px;
   --footer-engagement-logo-max-height: 40px;
   --footer-engagement-logo-padding: 24px 0 0;
-  --footer-engagement-logo-text-a-color-hover: var(--footer-engagement-logo-text-a-color);
-  --footer-engagement-logo-text-a-color: #000;
-  --footer-engagement-logo-text-color: #000;
   --footer-engagement-logo-text-font-size-mobile: 0.42rem;
   --footer-engagement-logo-text-font-size: 0.49rem;
   --footer-engagement-logo-text-line-height: 11px;
@@ -195,11 +207,11 @@ html {
   --footer-flex-wrap: wrap;
   --footer-font-size-mobile: var(--footer-a-link-font-size-mobile);
   --footer-font-size: var(--footer-a-link-font-size);
-  --footer-homepage-background-color: #000;
   --footer-homepage-logo-container-justify-content: flex-end;
   --footer-homepage-padding-mobile: 0 10px 5px 0;
   --footer-homepage-padding: var(--footer-padding);
   --footer-justify-content: space-between;
+  --footer-li-last-of-type-padding: 0.5rem;
   --footer-logo-align-items: flex-end;
   --footer-logo-container-flex-wrap-mobile: nowrap;
   --footer-logo-container-justify-content-wrapped-mobile: space-between;
@@ -221,22 +233,27 @@ html {
   --footer-ul-margin-mobile: 0 auto 15px auto;
   --footer-ul-margin: 0 10px;
   --footer-ul-padding: 0;
-  --footer-li-last-of-type-padding: 0.5rem;
   --form-flex-direction: row;
+  --h1-font-family: "HelveticaExpanded";
   --h1-font-size-mobile: min(1.7em, 9vw);
+  --h1-font-size: 3.75em;
   --h1-line-height-mobile: var(--h1-line-height);
   --h1-line-height: 1.1em;
   --h1-text-align: center;
   --h1-text-transform: uppercase;
+  --h1-word-break: break-word;
   --h2-font-size-mobile: var(--h1-font-size-mobile);
+  --h2-font-size: 1.5em;
+  --h2-font-size: 3.75em;
+  --h2-font-weight: bold;
   --h2-line-height-mobile: var(--h1-line-height-mobile);
   --h2-line-height: var(--h1-line-height);
   --h2-margin: 10px;
   --h2-text-align: var(--h1-text-align);
   --h2-text-transform: uppercase;
   --h2-word-break: break-word;
-  --h2-font-weight: bold;
   --h3-font-size-mobile: var(--h1-font-size-mobile);
+  --h3-font-size: 1.4em;
   --h3-line-height-mobile: var(--h1-line-height-mobile);
   --h3-line-height: var(--h1-line-height);
   --h3-margin: 15px;
@@ -250,7 +267,6 @@ html {
   --h4-margin: 0;
   --h4-text-align: var(--h1-text-align);
   --h4-text-transform: uppercase;
-  --h4-color: white;
   --h5-font-family: var(--font-family-bold);
   --h5-font-size-mobile: var(--h1-font-size-mobile);
   --h5-font-size: var(--h1-font-size);
@@ -268,23 +284,20 @@ html {
   --header-a-font-size-open: 0;
   --header-a-font-size: var(--font-size-mobile);
   --header-a-line-height: 1.3em;
-  --header-a-menu-icon-background-color: var(--color);
   --header-a-menu-icon-height-open-mobile: 2px;
   --header-a-menu-icon-height: 2px;
   --header-a-menu-icon-margin-open-mobile: 2px;
   --header-a-menu-icon-margin: 2px;
+  --header-a-menu-icon-padding: 1rem;
   --header-a-menu-icon-spacing: min(6px, 1.4vw);
   --header-a-menu-icon-transition: background-color 1.2s ease;
   --header-a-menu-icon-width: min(45px, 12vw);
-  --header-a-menu-icon-padding: 1rem;
   --header-a-padding: 0;
   --header-a-text-decoration-hover: none;
   --header-a-text-underline-offset: var(--a-text-underline-offset);
   --header-a-transition: none;
   --header-background-animation: 1s ease;
   --header-background-color-open: transparent;
-  --header-background-color: #FFED00;
-  --header-color: #000;
   --header-content-spacing-mobile: var(--header-content-spacing);
   --header-content-spacing: 0;
   --header-content-width-mobile: 90%;
@@ -295,6 +308,9 @@ html {
   --header-flex-direction: column;
   --header-height-mobile: auto;
   --header-height: auto;
+  --header-img-max-height: auto;
+  --header-img-max-width: 100vw;
+  --header-img-width: 100vw;
   --header-intro-p-margin: 0;
   --header-intro-section-width-mobile: var(--content-width-not-web-component-mobile);
   --header-justify-content-mobile: end;
@@ -310,9 +326,7 @@ html {
   --header-padding: 0 0 0;
   --header-position: static;
   --header-text-align: center;
-  --header-title-color-nav-open: #000;
   --header-title-color-secondary-nav-open: var(--header-title-color-nav-open);
-  --header-title-color: var(--header-title-color-nav-open);
   --header-title-font-family-bold: var(--font-family-bold);
   --header-title-font-size-mobile: var(--h1-font-size-mobile);
   --header-title-font-size: var(--h1-font-size);
@@ -346,7 +360,6 @@ html {
   --main-padding: calc(var(--spacer-height)/2) 0 0 0;
   --module-wrapper-margin-mobile: 20% 0 0 0;
   --module-wrapper-margin: 15% 0 0 0;
-  --navigation-a-link-color-nav-open: #000;
   --navigation-a-link-content-spacing-nav-open: 0;
   --navigation-a-link-content-spacing: 0;
   --navigation-a-link-font-family: var(--font-family-bold);
@@ -360,10 +373,6 @@ html {
   --navigation-a-link-text-transform: uppercase;
   --navigation-background-color: transparent;
   --navigation-border-top: 0;
-  --navigation-color-hover: var(--navigation-a-link-color-nav-open);
-  --navigation-color-open: #AEAEB2;
-  --navigation-color-open-hover: #6C6C70;
-  --navigation-color: #000;
   --navigation-content-spacing: 0;
   --navigation-flex-direction: column;
   --navigation-hr-color: transparent;
@@ -383,37 +392,25 @@ html {
   --p-margin: 0;
   --p-text-align: center;
   --padding: 15px 0;
-  --picture-img-max-height: auto;
   --picture-img-margin: 0;
-  --picture-margin: var(--content-spacing, unset) auto;
-  /* Warning! Keep horizontal margin at auto, otherwise the content width + margin may overflow into the scroll bar */
+  --picture-img-max-height: auto;
+  --picture-margin: var(--content-spacing, unset) auto; /* Warning! Keep horizontal margin at auto, otherwise the content width + margin may overflow into the scroll bar */
   --picture-width-mobile: 100%;
-  --picture-width: var(--content-width, 80%);
-  --playlist-color: #000;
-  --playlist-border-bottom: 2px solid white;
-  --playlist-border-top: 2px solid white;
-  --playlist-margin-first-child: 30px 0 0 0;
-  --playlist-margin: 30px 0 10% 0;
-  --playlist-width: 100%;
-  --playlist-spacer-background-color: #FFED00;
-  --playlist-item-background-color: var(--background-color);
-  --playlist-item-a-color-hover: white;
-  --playlist-item-a-color: var(--a-color);
+  --picture-width: var(--content-width, 80%);  
   --playlist-item-a-text-decoration-hover: var(--a-text-decoration-hover);
   --playlist-item-a-text-decoration: var(--a-text-decoration);
   --playlist-item-a-text-underline-offset: var(--a-text-underline-offset);
   --playlist-item-content-width-mobile: var(--content-width-not-web-component-mobile);
   --playlist-item-h4-font-family: var(--h4-font-family);
-  --playlist-item-li-margin: 0 30px;
-  --playlist-item-padding: var(--padding);
-  --playlist-item-heading-margin: 1rem auto 1rem auto;
   --playlist-item-heading-font-family: var(--font-family-bold);
   --playlist-item-heading-font-weight: 500;
-  --search-a-color: var(--color);
+  --playlist-item-heading-margin: 1rem auto 1rem auto;
+  --playlist-item-li-margin: 0 30px;
+  --playlist-item-padding: var(--padding);
+  --playlist-margin-first-child: 30px 0 0 0;
+  --playlist-margin: 30px 0 10% 0;
+  --playlist-width: 100%;
   --search-a-display: var(--a-display);
-  --search-a-input-border-bottom-first: 2px solid white;
-  --search-a-input-border-bottom: 2px solid white;
-  --search-a-input-border-top-first: 2px solid white;
   --search-a-margin: var(--a-margin);
   --search-a-text-align: var(--a-text-align);
   --search-a-text-decoration-hover: var(--a-text-decoration-hover);
@@ -426,22 +423,18 @@ html {
   --search-button-right: 30%;
   --search-button-transform-mobile: none;
   --search-button-transform: translateX(100%);
-  --search-color-hover: var(--color);
-  --search-color: var(--color);
   --search-content-width-mobile: var(--content-width-not-web-component-mobile);
   --search-content-width: var(--content-width-not-web-component);
   --search-display: inline;
   --search-field-a-margin: 0;
   --search-field-a-text-decoration-hover: none;
   --search-field-a-text-decoration: underline;
-  --search-field-a-text-underline-offset: 0.2em;
-  /* should be 6px but not visible */
+  --search-field-a-text-underline-offset: 0.2em;  /* should be 6px but not visible */
   --search-field-button-border: 0;
   --search-field-button-font-family: var(--font-family);
   --search-field-button-text-decoration-hover: none;
   --search-field-button-text-decoration: underline;
   --search-field-button-underline-offset: var(--a-text-underline-offset);
-  --search-field-color: var(--color);
   --search-field-flex-grow: var(--flex-grow);
   --search-field-font-family-bold: var(--search-font-family-bold);
   --search-field-input-box-shadow-mobile: none;
@@ -459,7 +452,6 @@ html {
   --search-font-family-bold: var(--font-family-bold);
   --search-font-family-secondary: var(--font-family);
   --search-form-flex-direction: var(--form-flex-direction);
-  --search-h3-color: var(--color);
   --search-h3-font-size-mobile: var(--h1-font-size-mobile);
   --search-h3-font-size: var(--h1-font-size);
   --search-h3-line-height-mobile: var(--h1-line-height-mobile);
@@ -488,12 +480,6 @@ html {
   --ul-text-align: var(--h1-text-align);
   --video-margin: 70px auto 0 auto;
   --video-width: var(--picture-width);
-  --a-font-weight: bold;
-
-  /*Added smooth scrolling*/
-  scroll-behavior: smooth;
-
-  /* Bugfix: Safari Desktop ugly font rendering: https://jira.migros.net/browse/MUTOBOTEAM-3123 */
-  -webkit-font-smoothing: antialiased;
-
+  -webkit-font-smoothing: antialiased; /* Bugfix: Safari Desktop ugly font rendering: https://jira.migros.net/browse/MUTOBOTEAM-3123 */
+  scroll-behavior: smooth; /*Added smooth scrolling*/
 }
