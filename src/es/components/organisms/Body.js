@@ -84,7 +84,7 @@ export default class Body extends Shadow() {
         width: var(--content-width-not-web-component, 80%);
       }
       :host > main h1 {
-        color: var(--h1-color, var(--color, black));
+        color: var(--heading-color);
         font-size: var(--h1-font-size, min(5rem, 10vw));
         font-family: var(--h1-font-family, var(--font-family-bold));
         font-weight: var(--h1-font-weight, var(--font-weight, normal));
@@ -96,7 +96,7 @@ export default class Body extends Shadow() {
         padding: var(--h1-padding, unset);
       }
       :host > main h2 {
-        color: var(--h2-color, var(--color, black));
+        color: var(--heading-color);
         font-size: var(--h2-font-size, min(4rem, 10vw));
         font-family: var(--h2-font-family, var(--font-family-bold));
         font-weight: var(--h2-font-weight, var(--font-weight, normal));
@@ -108,7 +108,7 @@ export default class Body extends Shadow() {
         padding: var(--h2-padding, unset);
       }
       :host > main h3 {
-        color: var(--h3-color, var(--color, black));
+        color: var(--heading-color);
         font-size: var(--h3-font-size, min(3rem, 10vw));
         font-family: var(--h3-font-family, var(--font-family-bold));
         font-weight: var(--h3-font-weight, var(--font-weight, normal));
@@ -120,7 +120,7 @@ export default class Body extends Shadow() {
         padding: var(--h3-padding, unset);
       }
       :host > main h4 {
-        color: var(--h4-color, var(--color, black));
+        color: var(--heading-color);
         font-size: var(--h4-font-size, min(2rem, 10vw));
         font-family: var(--h4-font-family);
         font-weight: var(--h4-font-weight, var(--font-weight, normal));
@@ -132,7 +132,7 @@ export default class Body extends Shadow() {
         padding: var(--h4-padding, unset);
       }
       :host > main h5 {
-        color: var(--h5-color, var(--color, black));
+        color: var(--heading-color);
         font-size: var(--h5-font-size, min(1.5rem, 10vw));
         font-family: var(--h5-font-family, var(--font-family-secondary));
         font-weight: var(--h5-font-weight, var(--font-weight, normal));
@@ -144,7 +144,7 @@ export default class Body extends Shadow() {
         padding: var(--h5-padding, unset);
       }
       :host > main h6 {
-        color: var(--h6-color, var(--color, black));
+        color: var(--heading-color);
         font-size: var(--h6-font-size, min(1.5rem, 10vw));
         font-family: var(--h6-font-family, var(--font-family-secondary));
         font-weight: var(--h6-font-weight, var(--font-weight, normal));
@@ -163,7 +163,7 @@ export default class Body extends Shadow() {
         margin: var(--p-margin, var(--content-spacing, unset)) auto;
       }
       :host > main a {
-        color: var(--a-color, var(--color-secondary, var(--color, pink)));
+        color: var(--a-color);
         font-weight: var(--a-font-weight, var(--font-weight, normal));
         text-align: var(--a-text-align, unset);
         text-decoration: var(--a-text-decoration, var(--text-decoration, none));

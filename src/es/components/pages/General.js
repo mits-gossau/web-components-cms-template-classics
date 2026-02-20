@@ -74,7 +74,7 @@ export default class General extends Shadow() {
       /* to counteract misc.css */
       /* hide component stuff before it is rendered to avoid the blitz (flashing white) also set the --background-color in the variables...css */
       :host, html {
-        color: var(--color, black);
+        color: var(--secondary-color);
         font-family: var(--font-family, "FuturaT", Arial, sans-serif);
         font-weight: var(--font-weight, normal);
       }

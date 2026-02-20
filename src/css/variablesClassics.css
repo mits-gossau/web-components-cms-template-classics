@@ -77,24 +77,19 @@ html {
   --playlist-spacer-background-color: var(--primary-color);
   --carousel-pagination-background-color-selected: var(--primary-color);
   --carousel-pagination-background-color: var(--primary-color);
-  --footer-background-color: var(--primary-color);
+  
 
   /* color */
-  --a-color: var(--secondary-color);
   --carousel-color-hover: var(--secondary-color);
   --carousel-color: var(--secondary-color);
   --color-hover-secondary: var(--secondary-color);
-  --color-menu-icon: var(--secondary-color);
   --color: var(--secondary-color);
+  --carousel-a-color: var(--a-color);
+  --playlist-item-a-color: var(--a-color);
+  --a-color: var(--a-color);
+  --heading-color: var(--secondary-color);
   --concerts-playlist-border-bottom: var(--secondary-color);
   --concerts-playlist-color: var(--secondary-color);
-  --footer-color: var(--secondary-color);
-  --footer-engagement-logo-text-a-color: var(--secondary-color);
-  --footer-engagement-logo-text-color: var(--secondary-color);
-  --h1-color: var(--secondary-color);
-  --h2-color: var(--secondary-color);
-  --h3-color: var(--secondary-color);
-  --h4-color: var(--secondary-color);
   --header-color: var(--secondary-color);
   --header-title-color-nav-open: var(--secondary-color);
   --header-title-color: var(--secondary-color);
@@ -103,7 +98,6 @@ html {
   --navigation-color-open: var(--secondary-color);
   --navigation-color: var(--secondary-color);
   --playlist-color: var(--secondary-color);
-  --playlist-item-a-color: var(--secondary-color);
   --search-a-color: var(--secondary-color);
   --search-color: var(--secondary-color);
   --search-field-color: var(--secondary-color);
@@ -111,11 +105,13 @@ html {
 
   /* color hover */
   --color-hover: var(--tertiary-color);
+  --carousel-a-color-hover: var(--a-color-hover);
+  --playlist-item-a-color-hover: var(--a-color-hover);
+  --a-color-hover: var(--tertiary-color);
   --footer-color-hover: var(--tertiary-color);
   --footer-engagement-logo-text-a-color-hover: var(--tertiary-color);
   --navigation-color-hover: var(--tertiary-color);
   --navigation-color-open-hover: var(--tertiary-color);
-  --playlist-item-a-color-hover: var(--tertiary-color);
   --search-color-hover: var(--tertiary-color);
 
   /* border color */
@@ -125,6 +121,14 @@ html {
   --search-a-input-border-bottom: 2px solid var(--secondary-color);
   --search-a-input-border-top-first: 2px solid var(--secondary-color);
   
+  /* burger nav */
+  --color-menu-icon: var(--quaternary-color);
+
+  /* footer */
+  --footer-background-color: var(--quaternary-color);
+  --footer-color: var(--primary-color);
+  --footer-engagement-logo-text-a-color: var(--primary-color);
+  --footer-engagement-logo-text-color: var(--primary-color);
   
 /*------------------------------------------------- COLOR/THEME MANAGEMENT END -------------------------------------------------*/
 
@@ -482,4 +486,5 @@ html {
   --video-width: var(--picture-width);
   -webkit-font-smoothing: antialiased; /* Bugfix: Safari Desktop ugly font rendering: https://jira.migros.net/browse/MUTOBOTEAM-3123 */
   scroll-behavior: smooth; /*Added smooth scrolling*/
+
 }
