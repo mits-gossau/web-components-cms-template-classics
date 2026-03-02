@@ -169,9 +169,10 @@ html {
 /* FONT DISPLAY OPTIONS (FAMILY, WEIGHT, TRANSFORM, DECORATION): */
   --font-family: "HelveticaNowTextRegular", "Arial", sans-serif;  
   --font-family-bold: "HelveticaNowDisplayBold", "Arial", sans-serif;
+  --font-family-expanded: "HelveticaExpanded", "Arial", sans-serif;
   --font-weight: normal;
 
-  --h1-font-family: var(--font-family-bold);
+  --h1-font-family: var(--font-family-expanded);
   --h1-text-transform: uppercase;
   --h1-text-align: center;
   --h2-font-family: var(--font-family-bold);
