@@ -29,6 +29,7 @@
             top: 20px;
             left: 20px;
           }
+
           @media only screen and (max-width: 767px) {
             :host .header-logo {
               z-index: 7;
@@ -131,7 +132,7 @@
                   <a href="/de/Talentförderung">Talentförderung</a>
                 </li>
                 <li>
-                  <a href="/de/Kontakt">Kontakt</a>
+                  <a href="/de/Kontakt">Kontaktaaa</a>
                 </li>
               </ul>
             </li>
@@ -185,21 +186,21 @@
       <o-body>
         <main>
           <!-- <section class="welcome" style="text-align: center;"> -->
-            <!-- <style>
+          <!-- <style>
               :host>main p {
                 --content-width-not-web-component: 670px !important;
               }
             </style> -->
-            <h1>Willkommen bei<br>Migros Classics</h1>
-            <h2>Willkommen zur 79. Konzertsaison<br>der Migros-Kulturprozent-Classics.</h2>
-            <p>Wir präsentieren qualitativ hochstehende und neue Konzerterlebnisse mit Meisterwerken von Beethoven,
-              Strawinski, Händel, Gershwin, Sibelius, Berg und Mahler. Junge Orchester eröffnen einen neuen Zugang zu
-              klassischer Musik – innovativ, experimentell und voller Spielfreude.</p>
-            Ich freue mich auf Sie. Bis auf bald im Konzertsaal!</p>
-            <div class="spacer-half"></div>
-            <p><strong>Mischa Damev</strong><br>Intendant Migros-Kulturprozent-Classics</p>
-            <div class="spacer-small"></div>
-            <a href="#konzerte" class="link">ALLE KONZERTE IM ÜBERBLICK</a>
+          <h1>Willkommen bei<br>Migros Classics</h1>
+          <h2>Willkommen zur 79. Konzertsaison<br>der Migros-Kulturprozent-Classics.</h2>
+          <p>Wir präsentieren qualitativ hochstehende und neue Konzerterlebnisse mit Meisterwerken von Beethoven,
+            Strawinski, Händel, Gershwin, Sibelius, Berg und Mahler. Junge Orchester eröffnen einen neuen Zugang zu
+            klassischer Musik – innovativ, experimentell und voller Spielfreude.</p>
+          Ich freue mich auf Sie. Bis auf bald im Konzertsaal!</p>
+          <div class="spacer-half"></div>
+          <p><strong>Mischa Damev</strong><br>Intendant Migros-Kulturprozent-Classics</p>
+          <div class="spacer-small"></div>
+          <a href="#konzerte" class="link">ALLE KONZERTE IM ÜBERBLICK</a>
           <!-- </section> -->
           <div class="spacer-content"></div>
           <h2>DIE NÄCHSTEN KONZERTE</h2>
@@ -214,7 +215,7 @@
           </a-picture>
           <h3>MUSIK VON BACH ÜBER KLEZMER
             BIS HIN ZU LED ZEPPELIN</h3>
-            <h4>THE MALIKIAN ORCHESTRA & ARA MALIKIAN</h4>
+          <h4>THE MALIKIAN ORCHESTRA & ARA MALIKIAN</h4>
           <p>Sie ist die erste Dirigentin, die bei den Salzburger Festspielen eine Oper dirigiert: Joana Mallwitz, 34
             Jahre alt, Leidenschaftliche Mozart-Liebhaberin.</p>
           <a href="#">Zum Gespräch</a>
@@ -289,6 +290,29 @@
                   <a-link namespace="footer-" text-transform="uppercase">
                     <a href="#">Kontakt</a>
                   </a-link>
+                  <style>
+                    :host a-one-trust {
+                      cursor: pointer;
+                    }
+
+                    :host a-one-trust:hover {
+                      text-decoration: underline;
+                      text-underline-offset: 0.2em;
+                    }
+                  </style>
+                  <!-- <a-one-trust-new id="08b81dd3-33f1-4f13-a276-ab4586a279a0" link-text="Cookie-Einstellungen"></a-one-trust-new> -->
+                   <a-one-trust-new link-text="Cookie Settings">
+                    <template>
+                      <!-- OneTrust Cookie-Einwilligungshinweis – Anfang für admin.cafe-royal.com -->
+                      <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true"
+                        type="text/javascript" charset="UTF-8" data-domain-script="019c1e31-7a2f-7a5a-80bd-0f08bdc3ae99">
+                        </script>
+                      <script type="text/javascript">
+                        function OptanonWrapper() { }
+                      </script>
+                      <!-- OneTrust-Cookie-Einwilligungshinweis – Ende für admin.cafe-royal.com -->
+                    </template>
+                  </a-one-trust-new>
                 </p>
               </li>
               <li>
