@@ -113,6 +113,7 @@ export default class Navigation extends Shadow() {
         --font-weight: var(--a-link-font-weight);
         --line-height: var(--a-link-line-height);
         --text-transform: var(--a-link-text-transform);
+        --a-link-font-family: "Futura Now ExtraBlack", "Arial", sans-serif;
         font-family: var(--a-link-font-family);
         font-weight: var(--a-font-weight, var(--font-weight, normal));
       }
@@ -127,6 +128,7 @@ export default class Navigation extends Shadow() {
         --font-size: var(--a-link-second-level-font-size, 1rem);
         --font-weight: var(--a-link-second-level-font-weight, var(--a-link-font-weight));
         --line-height: var(--a-link-second-level-line-height);
+        --a-link-second-level-font-family: "Futura Now Regular", "Arial", sans-serif;
         font-family: var(--a-link-second-level-font-family);
         font-weight: var(--a-font-weight, var(--font-weight, normal));
       }
@@ -313,7 +315,8 @@ export default class Navigation extends Shadow() {
         margin-right: 1.5rem;
       }
       :host > nav > ul li.language-switcher > a-link {
-        --a-link-font-family: var(--font-family);
+        --font-family-language-switcher: "Futura Now Regular", "Arial", sans-serif;
+        --a-link-font-family: var(--font-family-language-switcher, --font-family);
         --a-link-font-size: 1.2rem;
         --a-link-font-size-nav-open: 1.2rem;
       }
@@ -325,7 +328,7 @@ export default class Navigation extends Shadow() {
         border: 1px solid black;
         --color: white;
         --a-link-color-nav-open: white;
-        --a-link-font-family: "Futura Now Light";
+        --font-family: "Futura Now Light";
         --a-link-font-size: 1.2rem;
         --a-link-font-size-nav-open: 1.2rem;
         --a-link-content-spacing-nav-open: 1rem 1.25rem;
