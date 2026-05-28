@@ -1,7 +1,7 @@
 /**
  * NOTE: consider the following <link rel="preload" href="[url_to_font]"> to prefetch initially displayed fonts
  */
-
+/*
 @font-face {
     font-family: 'FuturaT';
     src: url('../fonts/FuturaT/FuturaT-Book.eot');
@@ -22,7 +22,7 @@
     font-style: normal;
     font-weight: normal;
 }
-
+*/
 /**
  * ClubConcerts.html see end of body, there is a javascript which goes along with the CSS style
  * <script type="text/javascript" async src="https://fast.fonts.net/jsapi/2b52b456-d052-418d-8595-f1c46d3439fb.js"></script>
@@ -34,6 +34,7 @@
  *  https://css-tricks.com/leading-trim-the-future-of-digital-typesetting/
  *  https://caniuse.com/?search=leading-trim
  */
+ /*
 @font-face{
   font-family:"Futura Now Black";
   src:url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextBlack_normal.woff2") format("woff2"),url("https://cdn.migros.ch/ch.migros/static/fonts/FuturaNow/FuturaNowTextBlack_normal.woff") format("woff");
@@ -75,4 +76,4 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-}
+} */

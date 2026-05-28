@@ -54,13 +54,28 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "HelveticaExpanded";
-  src: url("https://cdn.migros.ch/ch.migros/static/fonts/NeueHelvetica-normal/NeueHelvetica_normal_expanded_700.woff2") format("woff2");
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Neue Helvetica Pro 73 Extended Bold by Linotype
+ * URL: https://www.myfonts.com/collections/linotype-foundry
+ 
+ * © 2026 MyFonts Inc. */
+
+ @font-face {
+  font-family: "NeueHelveticaPro73ExtendedBold";
+  src: url('../fonts/NeueHelveticaPro73ExtendedBold/font.woff2') format('woff2'), url('webFonts/NeueHelveticaPro73ExtendedBold/font.woff') format('woff');
 }
+
+
+
 
 html {
   /*------------------------------------------------- COLOR/THEME MANAGEMENT START -------------------------------------------------*/
@@ -170,7 +185,7 @@ html {
 /* FONT DISPLAY OPTIONS (FAMILY, WEIGHT, TRANSFORM, DECORATION): */
   --font-family: "HelveticaNowTextRegular", "Arial", sans-serif;  
   --font-family-bold: "HelveticaNowDisplayBold", "Arial", sans-serif;
-  --font-family-expanded: "HelveticaExpanded", "Arial", sans-serif;
+  --font-family-expanded: "NeueHelveticaPro73ExtendedBold", "Arial", sans-serif;
   --font-weight: normal;
 
   --h1-font-family: var(--font-family-expanded);
@@ -187,6 +202,9 @@ html {
   --h6-font-family: var(--font-family-bold);
   --h6-text-transform: uppercase;
   --p-date-text-transform: uppercase;
+  --navigation-a-link-font-family: var(--h1-font-family);
+  --navigation-font-family-language-switcher: var(--font-family);
+  --navigation-a-link-second-level-font-family: var(--font-family);
   --a-font-weight: bold;
   --a-text-decoration-hover: none;
   --a-text-decoration: underline;

@@ -113,7 +113,6 @@ export default class Navigation extends Shadow() {
         --font-weight: var(--a-link-font-weight);
         --line-height: var(--a-link-line-height);
         --text-transform: var(--a-link-text-transform);
-        --a-link-font-family: "Futura Now ExtraBlack", "Arial", sans-serif;
         font-family: var(--a-link-font-family);
         font-weight: var(--a-font-weight, var(--font-weight, normal));
       }
@@ -127,8 +126,7 @@ export default class Navigation extends Shadow() {
       :host(.${this.getAttribute('no-scroll') || 'no-scroll'}) > nav > ul li ul a-link {
         --font-size: var(--a-link-second-level-font-size, 1rem);
         --font-weight: var(--a-link-second-level-font-weight, var(--a-link-font-weight));
-        --line-height: var(--a-link-second-level-line-height);
-        --a-link-second-level-font-family: "Futura Now Regular", "Arial", sans-serif;
+        --line-height: var(--a-link-second-level-line-height);       
         font-family: var(--a-link-second-level-font-family);
         font-weight: var(--a-font-weight, var(--font-weight, normal));
       }
@@ -315,7 +313,6 @@ export default class Navigation extends Shadow() {
         margin-right: 1.5rem;
       }
       :host > nav > ul li.language-switcher > a-link {
-        --font-family-language-switcher: "Futura Now Regular", "Arial", sans-serif;
         --a-link-font-family: var(--font-family-language-switcher, --font-family);
         --a-link-font-size: 1.2rem;
         --a-link-font-size-nav-open: 1.2rem;
