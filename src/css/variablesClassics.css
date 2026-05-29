@@ -191,7 +191,7 @@ html {
   --h1-font-family: var(--font-family-expanded);
   --h1-text-transform: uppercase;
   --h1-text-align: center;
-  --h2-font-family: var(--font-family-bold);
+  --h2-font-family: var(--font-family-expanded);
   --h2-text-transform: uppercase;
   --h3-font-family: var(--font-family-bold);
   --h3-text-transform: uppercase;
