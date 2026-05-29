@@ -351,7 +351,7 @@ export default class Navigation extends Shadow() {
         :host(.${this.getAttribute('no-scroll') || 'no-scroll'}) a-link {
           --font-size: var(--a-link-font-size-${this.getAttribute('no-scroll') || 'no-scroll'}-mobile, 2rem);
         }
-        :host > nav > ul li.language-switcher > a-link {
+        :host > nav > ul li.language-switcher > a-link,  :host > nav > ul li.ticket-btn-wrapper > a-link {
           --font-size: var(--font-size-language-switcher-mobile);
         } 
       }
