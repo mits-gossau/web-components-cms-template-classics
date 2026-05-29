@@ -164,6 +164,8 @@ html {
   --h5-font-size-mobile: 1em;
   --h6-font-size-mobile: 0.9em;
   --navigation-a-link-font-size: min(2.223em,9vw);
+  --navigation-a-link-font-size-nav-open-mobile: 7.5vw;
+  --navigation-font-size-language-switcher-mobile: 5vw;
   
 /* LINE HEIGHTS: */
   --line-height: 1.5em;  

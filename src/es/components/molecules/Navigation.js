@@ -341,10 +341,19 @@ export default class Navigation extends Shadow() {
         }
       }
       @media only screen and (max-width: 600px){
+        :host {
+          width: 100% !important;
+        }
         :host .close-icon-wrapper {
           top: -2rem;
           right: -0.25rem;
         }
+        :host(.${this.getAttribute('no-scroll') || 'no-scroll'}) a-link {
+          --font-size: var(--a-link-font-size-${this.getAttribute('no-scroll') || 'no-scroll'}-mobile, 2rem);
+        }
+        :host > nav > ul li.language-switcher > a-link {
+          --font-size: var(--font-size-language-switcher-mobile);
+        } 
       }
       @media only screen and (min-width: 1501px){
         :host {
