@@ -17,7 +17,7 @@ import { Shadow } from '../prototypes/Shadow.js'
  *  {string} [wrap] if left unset it wraps each word with span, if set to "only-last" it only gives the last word a <span> wrapper
  * }
  * @css {
- *  --font-family-bold [OPTIFutura-ExtraBlackCond]
+ *  --font-family-bold
  *  --color [white]
  *  --color-secondary [white]
  * }
@@ -71,7 +71,7 @@ export default class Title extends Shadow() {
       :host h1 {
         color: var(--color, white);
         font-size: var(--font-size, max(79px, 4vw));
-        font-family: var(--font-family-bold, 'OPTIFutura-ExtraBlackCond');
+        font-family: var(--font-family-bold);
         font-weight: var(--font-weight, normal);
         margin: 0;
         line-height: var(--line-height, max(69px, 3.5vw));
@@ -82,7 +82,7 @@ export default class Title extends Shadow() {
       :host h1 .secondary-color {
         color: var(--color-secondary, var(--color, white));
         font-size: var(--secondary-color-font-size, var(--font-size));
-        font-family: var(--secondary-color-font-family, var(--font-family-bold, 'OPTIFutura-ExtraBlackCond'));
+        font-family: var(--secondary-color-font-family, var(--font-family-bold));
         font-weight: var(--secondary-font-weight, var(--font-weight, normal));
         text-transform: var(--secondary-color-text-transform, var(--text-transform, uppercase));
         transition: var(--secondary-transition, var(--transition, all 0.2s ease));

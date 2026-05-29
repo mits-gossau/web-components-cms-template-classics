@@ -324,8 +324,8 @@ export default class Navigation extends Shadow() {
         background-color: black;
         border: 1px solid black;
         --color: white;
+        --color-open: white;
         --a-link-color-nav-open: white;
-        --font-family: "Futura Now Light";
         --a-link-font-size: 1.2rem;
         --a-link-font-size-nav-open: 1.2rem;
         --a-link-content-spacing-nav-open: 1rem 1.25rem;

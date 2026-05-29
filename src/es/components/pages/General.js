@@ -17,8 +17,8 @@ import { Shadow } from '../prototypes/Shadow.js'
  *  --footer-min-height  [250px]
  *  --footer-min-height-mobile [150px]
  *  --color [black]
- *  --font-family [FuturaT, (fallback)]
- *  --font-family-bold [OPTIFutura-ExtraBlackCond, (fallback)]
+ *  --font-family 
+ *  --font-family-bold 
  * }
  * @attribute {
  *  {string} mobile-breakpoint
@@ -75,12 +75,12 @@ export default class General extends Shadow() {
       /* hide component stuff before it is rendered to avoid the blitz (flashing white) also set the --background-color in the variables...css */
       :host, html {
         color: var(--secondary-color);
-        font-family: var(--font-family, "FuturaT", Arial, sans-serif);
+        font-family: var(--font-family, Arial, sans-serif);
         font-weight: var(--font-weight, normal);
       }
       html a {
         color: var(--a-color, var(--color-secondary, var(--color, blue)));
-        font-family: var(--font-family, "FuturaT", Arial, sans-serif);
+        font-family: var(--font-family, Arial, sans-serif);
         font-weight: var(--font-weight, normal);
         text-decoration: var(--a-text-decoration, var(--text-decoration, none));
       }
